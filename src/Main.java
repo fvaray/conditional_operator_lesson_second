@@ -24,7 +24,9 @@ public class Main {
 
         System.out.println("Задача 3");
         int year = 1984;
-        if (year % 400 == 0) {
+        if(year <= 1584){
+            System.out.println("Год должен быть больше 1584");
+        } else if (year % 400 == 0) {
             System.out.printf("%d год является високосным \n", year);
         } else if (year % 100 == 0) {
             System.out.printf("%d год не является високосным \n", year);
